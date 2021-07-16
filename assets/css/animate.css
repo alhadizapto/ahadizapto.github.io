@@ -112,7 +112,7 @@ body {
 .loading-text {
   position: absolute;
   text-transform: uppercase;
-  background: url(bg/bg.jpeg);
+  background: url(/assets/css/bg/bg.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
