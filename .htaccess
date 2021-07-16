@@ -3,6 +3,12 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+    RewriteEngine di 
+    RewriteCond% {HTTP_REFERER}! ^ $ 
+    RewriteCond% {HTTP_REFERER}! ^ Https: // (www \.) ahadizapto.kozow.com/.*$ [NC] 
+    RewriteRule \. (gif | jpg | jpeg | bmp | png | html) $ - [F]
+    RewriteEngine On
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
