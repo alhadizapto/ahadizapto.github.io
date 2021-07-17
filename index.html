@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="/assets/img/lhd-ico.png" />
     <!-- style -->
     <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/bgAnimate.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,21 +33,23 @@
     </script>
   </head>
   <body>
-    <!-- nav -->
+    <div class="gradient-pattern">
+      <!-- nav -->
 
-    <!-- content -->
-    <div class="loading-container">
-      <div class="shutter top">
-        <h1 class="loading-text"></h1>
+      <!-- content -->
+      <div class="loading-container">
+        <div class="shutter top">
+          <h1 class="loading-text"></h1>
+        </div>
+        <div class="shutter bottom">
+          <h1 class="loading-text"></h1>
+        </div>
       </div>
-      <div class="shutter bottom">
-        <h1 class="loading-text"></h1>
-      </div>
+      <div include="/pages/index-content.html"></div>
+
+      <!-- footer -->
+      <div include="/pages/footer.html"></div>
     </div>
-    <div include="/pages/index-content.html"></div>
-
-    <!-- footer -->
-    <div include="/pages/footer.html"></div>
 
     <!-- script -->
     <script src="/assets/js/welcome.js"></script>

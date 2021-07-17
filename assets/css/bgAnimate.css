@@ -1,0 +1,18 @@
+.gradient-pattern {
+  animation: gradient 4s ease infinite;
+  background-image: linear-gradient(135deg, #ff0000, #ffffff);
+  background-size: 400% 400%;
+  height: calc(100% / 1.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
